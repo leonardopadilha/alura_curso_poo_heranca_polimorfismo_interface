@@ -1,0 +1,21 @@
+<?php
+
+require_once 'Pessoa.php';
+require_once 'CPF.php';
+require_once 'Endereco.php';
+
+class Titular extends Pessoa
+{
+    private Endereco $endereco;
+
+    public function __construct(string $nome, CPF $cpf, Endereco $endereco)
+    {
+        parent::__construct($nome, $cpf);
+        $this->endereco = $endereco;
+    }
+
+    public function recuperaEndereco() : Endereco
+    {
+        return $this->endereco;
+    }
+}
