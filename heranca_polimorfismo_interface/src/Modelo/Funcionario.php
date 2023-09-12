@@ -1,8 +1,11 @@
 <?php
-require_once 'CPF.php';
-require_once 'Pessoa.php';
 
-class Funcionario extends Pessoa
+namespace Alura\Banco\Modelo;
+
+use Alura\Banco\Modelo\CPF;
+use Alura\Banco\Modelo\NewPessoa;
+
+class Funcionario extends NewPessoa
 {
     private string $cargo;
 

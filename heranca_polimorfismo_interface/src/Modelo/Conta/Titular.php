@@ -1,10 +1,12 @@
 <?php
 
-require_once 'Pessoa.php';
-require_once 'CPF.php';
-require_once 'Endereco.php';
+namespace Alura\Banco\Modelo\Conta;
 
-class Titular extends Pessoa
+use Alura\Banco\Modelo\NewPessoa;
+use Alura\Banco\Modelo\CPF;
+use Alura\Banco\Modelo\Endereco;
+
+class Titular extends NewPessoa
 {
     private Endereco $endereco;
 

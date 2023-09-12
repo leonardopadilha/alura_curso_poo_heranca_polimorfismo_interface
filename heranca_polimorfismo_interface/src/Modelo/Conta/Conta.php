@@ -1,6 +1,8 @@
 <?php
 
-require_once 'Titular.php';
+namespace Alura\Banco\Modelo\Conta;
+
+use Alura\Banco\Modelo\Conta\Titular;
 
 class Conta {
     private Titular $titular;

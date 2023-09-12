@@ -1,8 +1,10 @@
 <?php
 
-require 'CPF.php';
+namespace Alura\Banco\Modelo;
 
-class Pessoa
+use Alura\Banco\Modelo\CPF;
+
+class NewPessoa
 {
     protected string $nome;
     private CPF $cpf;
