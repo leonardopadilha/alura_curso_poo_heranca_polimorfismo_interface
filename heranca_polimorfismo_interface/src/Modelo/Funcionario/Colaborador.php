@@ -7,18 +7,12 @@ use Alura\Banco\Modelo\NewPessoa;
 
 abstract class Colaborador extends NewPessoa
 {
-    private string $cargo;
     private float $salario;
 
     public function __construct(string $nome, CPF $cpf, float $salario)
     {
         parent::__construct($nome, $cpf);
         $this->salario = $salario;
-    }
-
-    public function recuperaCargo() : string
-    {
-        return $this->cargo;
     }
 
     public function alteraNome(string $nome) : void
@@ -32,10 +26,7 @@ abstract class Colaborador extends NewPessoa
         return $this->salario;
     }
 
-    public function calculaBonificacaoDoFuncionario() : float
-    {
-        return $this->salario * 0.1;
-    }
+    abstract public function calculaBonificacaoDoFuncionario() : float;
 
     public function recebeAumentoSalarial(float $valorAumento) : void
     {
