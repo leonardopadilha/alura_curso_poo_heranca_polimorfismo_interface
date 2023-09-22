@@ -10,4 +10,4 @@ $outroEndereco = new Endereco("Outra Cidade", "Outro Bairro", "Outra Rua", "Outr
 echo $umEndereco . PHP_EOL;
 echo $outroEndereco . PHP_EOL;
 
-echo $umEndereco->cidade;
+echo $umEndereco->cidade . PHP_EOL;

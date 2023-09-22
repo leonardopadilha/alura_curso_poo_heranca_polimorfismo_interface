@@ -25,3 +25,11 @@ $controlador->adicionaBonificacoesDosFuncionarios($umDiretor);
 $controlador->adicionaBonificacoesDosFuncionarios($editorVideo);
 
 echo $controlador->recuperaTotalBonificacoes();
+
+echo PHP_EOL;
+
+echo $umDiretor->nome . PHP_EOL;
+
+$umDiretor->nome = "Um diretor";
+
+echo $umDiretor->nome;

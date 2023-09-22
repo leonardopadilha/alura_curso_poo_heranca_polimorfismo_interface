@@ -6,6 +6,8 @@ use Alura\Banco\Modelo\CPF;
 
 class NewPessoa
 {
+    use AcessarPropriedades;
+
     protected string $nome;
     private CPF $cpf;
 
@@ -32,5 +34,11 @@ class NewPessoa
             $this->nome = $nome;
             exit();
         }
+    }
+
+    public function __set(string $nomeAtributo, string $valorAtributo) : void
+    {
+       $this->validaNomeTitular($valorAtributo);
+       $this->$nomeAtributo = $valorAtributo;
     }
 }
