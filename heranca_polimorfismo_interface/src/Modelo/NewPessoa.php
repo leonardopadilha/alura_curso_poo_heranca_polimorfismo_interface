@@ -26,7 +26,8 @@ class NewPessoa
         return $this->cpf->recuperaNumero();
     }
 
-    protected function validaNomeTitular(string $nome) : void {
+    // não é possível alterar um método final
+    final protected function validaNomeTitular(string $nome) : void {
         if (strlen($nome) < 5) {
             $this->nome = $nome;
             exit();
