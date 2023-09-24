@@ -93,6 +93,10 @@ Gere a key do projeto Laravel
 php artisan key:generate
 ```
 
+Criar a model e a migration de produto
+```sh
+php artisan make:model Produto -m
+```
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
