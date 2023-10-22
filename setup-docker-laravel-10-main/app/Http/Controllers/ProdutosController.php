@@ -19,4 +19,9 @@ class ProdutosController extends Controller
         $findProduto = $this->produto->getProdutosPesquisarIndex(search: $pesquisar ?? '');
         return view('pages.produtos.paginacao', compact('findProduto'));
     }
+
+    public function delete(Request $request)
+    {
+        
+    }
 }

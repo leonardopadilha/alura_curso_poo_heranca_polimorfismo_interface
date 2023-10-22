@@ -37,7 +37,7 @@
                                     Editar
                                 </a>
 
-                                <a href="" class="btn btn-danger btn-sm">
+                                <a onclick="deleteRegistroPaginacao( '{{router('produto.delete') }}', {{ $produto->id}} )" class="btn btn-danger btn-sm">
                                     Excluir
                                 </a>
                             </td>
